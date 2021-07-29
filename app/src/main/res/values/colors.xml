@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#262938</color>
+    <color name="colorPrimaryDark">#181A24</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="white">#fff</color>
+    <color name="gray">#ccc</color>
+    <color name="login_form_details">#ccffffff</color>
+    <color name="login_form_details_light">#1affffff</color>
+    <color name="login_form_details_medium">#66ffffff</color>
+    <color name="admin_dash_color">#4a47a7</color>
+
+    <color name="transparent_white_hex_8">#88ffffff</color>
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="newwhite">#ffffff</color>
+
+    <color name="tfe_color_primary">#ffa800</color>
+    <color name="tfe_color_primary_dark">#ff6f00</color>
+    <color name="tfe_color_accent">#425066</color>
+
+    <color name="tfe_semi_transparent">#66000000</color>
+</resources>

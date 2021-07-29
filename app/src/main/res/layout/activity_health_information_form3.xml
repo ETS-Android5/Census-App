@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".health_information_form3">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimary"
+        android:paddingTop="20dp"
+        android:text="health information"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/times"
+        android:layout_width="299dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="20dp"
+        android:text="How many times did you consult a health provider in the last 4 weeks?"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <Spinner
+        android:id="@+id/spinnertimes"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_search"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/times" />
+
+    <TextView
+        android:id="@+id/visit"
+        android:layout_width="299dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="20dp"
+        android:text="Did you have any problems at the time of the visit?"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinnertimes" />
+
+    <Spinner
+        android:id="@+id/spinnervisit"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_search"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/visit" />
+
+    <TextView
+        android:id="@+id/medic"
+        android:layout_width="299dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="20dp"
+        android:text="Why did you use medical care inn the last 4 weeks?"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinnervisit" />
+
+    <Spinner
+        android:id="@+id/spinnermedic"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_search"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/medic" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="315dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="124dp"
+        android:background="@color/admin_dash_color"
+        android:text="take photo"
+        android:textColor="@color/white"
+        android:textSize="19dp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnermedic" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".education_information_form1">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimary"
+        android:paddingTop="20dp"
+        android:text="education information"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/contribute"
+        android:layout_width="299dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="20dp"
+        android:text="Do you read and write in any language?"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup1"
+        android:layout_width="202dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contribute">
+
+        <RadioButton
+            android:id="@+id/radio_yesedu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimary"
+            android:onClick="onRadioButtonClicked"
+            android:layout_marginLeft="20dp"
+            android:text="YES" />
+
+        <RadioButton
+            android:id="@+id/radio_noedu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:buttonTint="@color/colorPrimary"
+            android:onClick="onRadioButtonClicked"
+            android:text="NO" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/school"
+        android:layout_width="303dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="20dp"
+        android:text="Have you ever attended school?"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radiogroup1" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup3"
+        android:layout_width="202dp"
+        android:layout_height="58dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/school">
+
+        <RadioButton
+            android:id="@+id/radio_yessedu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:buttonTint="@color/colorPrimary"
+            android:onClick="RadioButtonClicked"
+            android:text="YES" />
+
+        <RadioButton
+            android:id="@+id/radio_nooedu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:buttonTint="@color/colorPrimary"
+            android:onClick="RadioButtonClicked"
+            android:text="NO" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/grade"
+        android:layout_width="299dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="20dp"
+        android:text="What is the highest grade you have completed?"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radiogroup3" />
+
+    <Spinner
+        android:id="@+id/spinnergrade"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_search"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/grade" />
+
+    <TextView
+        android:id="@+id/who"
+        android:layout_width="298dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="20dp"
+        android:text="Did you attend school last year?"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinnergrade" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup4"
+        android:layout_width="202dp"
+        android:layout_height="58dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/who">
+
+        <RadioButton
+            android:id="@+id/radiobtn_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:buttonTint="@color/colorPrimary"
+            android:onClick="onadioButtonClicked"
+            android:text="YES" />
+
+        <RadioButton
+            android:id="@+id/radiobtn_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:buttonTint="@color/colorPrimary"
+            android:onClick="onadioButtonClicked"
+            android:text="NO" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btneduinforform1"
+        android:layout_width="50dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="288dp"
+        android:layout_marginEnd="19dp"
+        android:background="@drawable/ic_baseline_navigate_next_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiogroup4" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "138551955200",
+    "firebase_url": "https://jpro-a543f.firebaseio.com",
+    "project_id": "jpro-a543f",
+    "storage_bucket": "jpro-a543f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138551955200:android:a0af375cf2a4af409aede5",
+        "android_client_info": {
+          "package_name": "com.example.jpro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "138551955200-de85ec8kubkr4m52giviqv6105ing1ad.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBP00syyda2ah95mjX_XLOXNLYMynECIW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "138551955200-de85ec8kubkr4m52giviqv6105ing1ad.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

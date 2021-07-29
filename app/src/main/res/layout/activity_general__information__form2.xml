@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".General_Information_Form2">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimary"
+        android:paddingTop="20dp"
+        android:text="general information"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/cname"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_search"
+        android:hint="Name"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <EditText
+        android:id="@+id/cage"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_search"
+        android:hint="Age"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/cname"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+
+    <RadioGroup
+        android:id="@+id/radiogroup1"
+        android:layout_width="202dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cname">
+
+        <RadioButton
+            android:id="@+id/radio_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimary"
+            android:onClick="onRadioButtonClicked"
+            android:text="MALE" />
+
+        <RadioButton
+            android:id="@+id/radio_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:buttonTint="@color/colorPrimary"
+            android:onClick="onRadioButtonClicked"
+            android:text="FEMALE" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radiogroup2"
+        android:layout_width="202dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cage">
+
+        <RadioButton
+            android:id="@+id/radio_single"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimary"
+            android:onClick="RadioButtonClicked"
+            android:text="SINGLE" />
+
+        <RadioButton
+            android:id="@+id/radio_married"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:buttonTint="@color/colorPrimary"
+            android:onClick="RadioButtonClicked"
+            android:text="MARRIED" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/how"
+        android:layout_width="299dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="20dp"
+        android:text="How long have you been away in the last 12 months?"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radiogroup1" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_search"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/how" />
+
+    <TextView
+        android:id="@+id/household"
+        android:layout_width="299dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="20dp"
+        android:text="What is your relationship to the head of household?"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner1" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_search"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/household" />
+
+    <TextView
+        android:id="@+id/contribute"
+        android:layout_width="299dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="20dp"
+        android:text="Do you contribute to household income?"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner2" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup3"
+        android:layout_width="202dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contribute">
+
+        <RadioButton
+            android:id="@+id/radio_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimary"
+            android:onClick="onRadioButtonClick"
+            android:layout_marginLeft="20dp"
+            android:text="YES" />
+
+        <RadioButton
+            android:id="@+id/radio_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:buttonTint="@color/colorPrimary"
+            android:onClick="onRadioButtonClick"
+            android:text="NO" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btngeninforform2"
+        android:layout_width="50dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="288dp"
+        android:layout_marginEnd="19dp"
+        android:background="@drawable/ic_baseline_navigate_next_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiogroup3"
+        app:layout_constraintVertical_bias="0.757" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

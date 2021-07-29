@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".health_information_form1">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimary"
+        android:paddingTop="20dp"
+        android:text="health information"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/contribute"
+        android:layout_width="299dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="20dp"
+        android:text="Did you have a live birth in the last 12 months?"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup1"
+        android:layout_width="202dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contribute">
+
+        <RadioButton
+            android:id="@+id/radiohealth_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimary"
+            android:onClick="onRadioButtonClicked"
+            android:layout_marginLeft="20dp"
+            android:text="YES" />
+
+        <RadioButton
+            android:id="@+id/radiohealth_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:buttonTint="@color/colorPrimary"
+            android:onClick="onRadioButtonClicked"
+            android:text="NO" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/edu"
+        android:layout_width="299dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="20dp"
+        android:text="Did you receive pre-natal care during the pregnancy?"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radiogroup1" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup2"
+        android:layout_width="202dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edu">
+
+        <RadioButton
+            android:id="@+id/radiohealthyes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimary"
+            android:onClick="onRadioButnClicked"
+            android:layout_marginLeft="20dp"
+            android:text="YES" />
+
+        <RadioButton
+            android:id="@+id/radiohealthno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:buttonTint="@color/colorPrimary"
+            android:onClick="onRadioButnClicked"
+            android:text="NO" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/post"
+        android:layout_width="299dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="20dp"
+        android:text="Did you receive post-natal care after delivery?"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radiogroup2" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup3"
+        android:layout_width="202dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/post">
+
+        <RadioButton
+            android:id="@+id/radihealth_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimary"
+            android:onClick="dioButtonClicked"
+            android:layout_marginLeft="20dp"
+            android:text="YES" />
+
+        <RadioButton
+            android:id="@+id/radihealth_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:buttonTint="@color/colorPrimary"
+            android:onClick="dioButtonClicked"
+            android:text="NO" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/ost"
+        android:layout_width="299dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="20dp"
+        android:text="Were you sick or injured in the last 4 weeks?"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radiogroup3" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup4"
+        android:layout_width="202dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ost">
+
+        <RadioButton
+            android:id="@+id/rai_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimary"
+            android:onClick="onRadioClicked"
+            android:layout_marginLeft="20dp"
+            android:text="YES" />
+
+        <RadioButton
+            android:id="@+id/rai_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:buttonTint="@color/colorPrimary"
+            android:onClick="onRadioClicked"
+            android:text="NO" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnhealthinforform1"
+        android:layout_width="50dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="288dp"
+        android:layout_marginEnd="19dp"
+        android:background="@drawable/ic_baseline_navigate_next_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiogroup4"
+        app:layout_constraintVertical_bias="0.043" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

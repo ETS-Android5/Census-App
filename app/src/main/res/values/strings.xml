@@ -1,0 +1,125 @@
+<resources>
+    <string name="app_name">SPA</string>
+
+    <string name="camera_permission_confirmation">This app demonstrates the usage of CameraView. In order to do that, it needs permission to access camera.</string>
+    <string name="camera_permission_not_granted">Camera app cannot do anything without camera permission.</string>
+    <string name="picture_taken">Picture taken</string>
+    <string name="aspect_ratio">Aspect ratio</string>
+    <string name="switch_flash">Switch flash</string>
+    <string name="switch_camera">Switch camera</string>
+    <string name="flash_auto">Flash auto</string>
+    <string name="flash_off">Flash off</string>
+    <string name="flash_on">Flash on</string>
+    <string name="take_picture">Recognize</string>
+    <string name="add_person">Add</string>
+    <string name="title_activity_add_person">AddPerson</string>
+
+    <string-array name="away">
+        <item>Never</item>
+        <item>Less than 6 months</item>
+        <item>6 months or more</item>
+    </string-array>
+
+    <string-array name="household">
+        <item>Head</item>
+        <item>Spouse</item>
+        <item>Child</item>
+        <item>Parent</item>
+        <item>Other relative</item>
+        <item>Not related</item>
+    </string-array>
+
+    <string-array name="grade">
+        <item>Pre School</item>
+        <item>Secondary School</item>
+        <item>Training School</item>
+        <item>Tertiary</item>
+    </string-array>
+
+    <string-array name="whoruns">
+        <item>Government</item>
+        <item>Rel. Org/ Church</item>
+        <item>Other Private</item>
+        <item>Community</item>
+    </string-array>
+
+    <string-array name="schoolpro">
+        <item>No problem</item>
+        <item>Lack of books</item>
+        <item>Poor teaching</item>
+        <item>Lack of teachers</item>
+        <item>Facilities in bad condition</item>
+        <item>Overcrowding</item>
+        <item>Lack of furniture</item>
+    </string-array>
+
+    <string-array name="notinschool">
+        <item>Not of school age</item>
+        <item>Completed School</item>
+        <item>Too far away</item>
+        <item>Too expensive</item>
+        <item>Is working(home or job)</item>
+        <item>Useless/uninteresting</item>
+        <item>Illness</item>
+        <item>Having a child/ Pregnancy</item>
+        <item>Failed Exams</item>
+        <item>Got married</item>
+        <item>Apprenticeship</item>
+    </string-array>
+
+    <string-array name="sickness">
+        <item>Fever/Malaria</item>
+        <item>Gastro Intestinal/Diarrhea</item>
+        <item>Injury/Accident</item>
+        <item>Dental</item>
+        <item>Skin condition</item>
+        <item>Eye</item>
+        <item>Ear, nose or throat</item>
+        <item>Coughing</item>
+    </string-array>
+
+    <string-array name="kindof">
+        <item>Private hospital/clinic</item>
+        <item>Public hospital/clinic</item>
+        <item>Community health center</item>
+        <item>Private doctor/dentist</item>
+        <item>Traditional healer</item>
+        <item>Missionary/hospital</item>
+        <item>Pharmacist/drugstore</item>
+    </string-array>
+
+    <string-array name="many">
+        <item>None</item>
+        <item>7 days or less</item>
+        <item>8 to 14 days</item>
+        <item>15 or more days</item>
+    </string-array>
+
+    <string-array name="times">
+        <item>1 to 3</item>
+        <item>4 to 6</item>
+        <item>More than 6</item>
+    </string-array>
+
+    <string-array name="visit">
+        <item>No problem</item>
+        <item>Facilities were not clean</item>
+        <item>Lonng waiting line</item>
+        <item>No trained professionals</item>
+        <item>Too expensive</item>
+        <item>No drugs available</item>
+        <item>Treatment unsuccessful</item>
+        <item>Poor staffing attitude</item>
+    </string-array>
+
+    <string-array name="medic">
+        <item>No need</item>
+        <item>Too expensive</item>
+        <item>Too far</item>
+        <item>Other</item>
+    </string-array>
+
+
+    <string name="tfe_od_app_name" translation_description="Object Detection demo app [CHAR_LIMIT=40]">Face Recognition</string>
+    <string name="tfe_od_camera_error" translation_description="Error regarding camera support[CHAR_LIMIT=40]">This device doesn\'t support Camera2 API.</string>
+</resources>

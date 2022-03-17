@@ -43,7 +43,7 @@ _To get a local copy up and running on your machine, follow these simple steps._
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/mangorepublic/GymApp.git
+   git clone https://github.com/mangorepublic/Census-App.git
    ```
 
 
@@ -75,7 +75,7 @@ limitations under the License.
 
 Edmond Yeboah - hopefuledi@gmail.com
 
-Project Link: [https://github.com/mangorepublic/GymApp](https://github.com/mangorepublic/GymApp.git)
+Project Link: [https://github.com/mangorepublic/Census-App](https://github.com/mangorepublic/Census-App.git)
 
 
 

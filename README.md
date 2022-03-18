@@ -22,7 +22,11 @@
 
 This is a demo Android application to collect census data in Ghana. It uses facial recognition to distinguish citizens whose data has previously been collected in order to reduce data redundancy.
 
-<img src="https://user-images.githubusercontent.com/38086894/133303339-914bf86b-fbff-4e49-93ce-cebe1aba9a12.png" width="250" height="500">  <img src="https://user-images.githubusercontent.com/38086894/133303618-f4f315d7-8807-4a17-87eb-d81ee8a1b0ef.png" width="250" height="500">  <img src="https://user-images.githubusercontent.com/38086894/133303929-6016d5ad-3cbd-42f6-b176-b7343f0e29af.png" width="250" height="500">  <img src="https://user-images.githubusercontent.com/38086894/133304239-704e39e8-6839-4642-8ee7-ff3f3171fbfd.png" width="250" height="500">  <img src="https://user-images.githubusercontent.com/38086894/133304256-3827a75c-7c87-46bf-91ef-d386b7f8a72e.png" width="250" height="500">  <img src="https://user-images.githubusercontent.com/38086894/158909316-81a7064e-ac7a-4834-940b-58fd6bbd3354.png" width="250" height="500">
+<img src="https://user-images.githubusercontent.com/38086894/158912654-23f325b0-88d2-4d36-9df0-8280ec2f775a.png" width="250" height="500">  <img src="https://user-images.githubusercontent.com/38086894/158912664-6fc96962-387b-4b6a-b8c4-4449a451506e.png" width="250" height="500">  <img src="https://user-images.githubusercontent.com/38086894/158912691-61fc83a2-334e-4e20-a286-134ce6643d25.png" width="250" height="500">  <img src="https://user-images.githubusercontent.com/38086894/158912718-0015018f-b050-404c-ab96-99f9d088f71d.png" width="250" height="500">  <img src="https://user-images.githubusercontent.com/38086894/133304256-3827a75c-7c87-46bf-91ef-d386b7f8a72e.png" width="250" height="500"> 
+
+
+![Screenshot_2022-03-17-23-52-10](https://user-images.githubusercontent.com/38086894/158912718-0015018f-b050-404c-ab96-99f9d088f71d.png)
+![Screenshot_2022-03-17-23-52-27](https://user-images.githubusercontent.com/38086894/158912721-4c2465b9-bedc-42e9-9abc-c6d81fc4605a.png)
 
 
 
